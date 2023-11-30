@@ -13,4 +13,15 @@ public class SmokeSteps {
         System.out.println("Test 2");
 
     }
+
+    @Given("I run cucumber test")
+    public void i_run_cucumber_test() {
+        System.out.println("I run cucumber test");
+    }
+    @Then("verify this is correct test")
+    public void verify_this_is_correct_test() {
+            for( int i = 0; i <100; i++){
+                System.out.println("This is indeed a cucumber test");
+            }
+    }
 }
